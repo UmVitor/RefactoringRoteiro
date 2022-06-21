@@ -23,12 +23,8 @@ public class Rental {
    }
 
    public int getFrequentRenterPoints() { 
-     int frequentRenterPoints = 1; 
-      //Adicionar o trecho de código extraído.
-     if ((this.getMovie().getPriceCode() == Movie.NEW_RELEASE) &&
-         this.getDaysRented() > 1) frequentRenterPoints ++;
      
-     return frequentRenterPoints;
+     return _movie.getFrequentRenterPoints(_daysRented);
 
    }
 }

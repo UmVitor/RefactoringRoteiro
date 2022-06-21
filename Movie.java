@@ -44,5 +44,15 @@ public class Movie {
         }
     return thisAmount;
    }
+
+   public int getFrequentRenterPoints(int daysRented){
+       //Adicionar o trecho de código extraído.
+     int frequentRenterPoints = 1; 
+      //Adicionar o trecho de código extraído.
+     if ((_priceCode == Movie.NEW_RELEASE) &&
+         daysRented > 1) frequentRenterPoints ++;
+     
+     return frequentRenterPoints;
+   }
   
 }
